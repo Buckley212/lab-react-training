@@ -1,3 +1,7 @@
+h2 {
+  font-size: 32px;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.IdCard {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  line-height: 0.25;
+  padding: 0.5%;
+}
+
+.IdCard img {
+  width: 10vw;
+  height: 18vh;
+}
+
+.box {
+  border: 1px solid black;
+  display: flex;
+  margin: 1%;
+}
+
+.Color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100vw;
+  height: 10%;
+}
+
+.driveCard img {
+  width: 15vw;
+  height: 23vh;
+  border-radius: 100%;
+}
+
+.driveCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  background: blue;
+  border-radius: 15px;
+  padding: 30px 100px;
+  color: white;
 }
