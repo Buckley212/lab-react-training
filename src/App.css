@@ -80,8 +80,26 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 10%;
-  background: blue;
+  background: rgb(13, 119, 232);
   border-radius: 15px;
   padding: 30px 100px;
   color: white;
+}
+
+.card img {
+  width: 10vw;
+  height: 5vh;
+}
+
+.dice img {
+  width: 100px;
+  height: 100px;
+}
+
+#email:invalid{
+  border-color: red;
+}
+
+#email:valid {
+  border-color: green;
 }

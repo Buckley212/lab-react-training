@@ -1,28 +1,23 @@
-function detectLanguage(props){
-    const hello = {
-        de: 'Hallo',
-        fr: 'Bonjour',
-        es: 'Hola',
-        en: 'Hello'
-    };
-    switch(props.lang){
+const detectLanguage = a =>{
+    switch(a){
         case 'de':
-            return `${hello.de} ${props.name}`;
+            return `Hallo `;
         case 'fr':
-            return `${hello.fr} ${props.name}`;
+            return `Bonjour `;
         case 'es':
-            return `${hello.es} ${props.name}`;
+            return `Hola `;
         case 'en':
-            return `${hello.en} ${props.name}`;
-        default: return  `Hello ${props.name}`;
+            return `Hello `;
     }
 }
 
-function Greetings(props) {
+
+const Greetings = props => {
+    let input = props.lang;
     return (
         <greet className="box">
             <section>
-                <p>{detectLanguage(props)}</p>
+                <p>{detectLanguage(input)}{props.name}</p>
             </section>
         </greet>
     )
